@@ -1,0 +1,16 @@
+---
+import { SOCIALS } from "@config";
+import type { SocialObject } from "types";
+import LinkButton from "./LinkButton.astro";
+import socialIcons from "@assets/socialIcons";
+
+export interface Props {
+  social: SocialObject;
+}
+
+const { social } = Astro.props;
+---
+
+<LinkButton href={social.href} className="link-button" title={social.linkTitle}>
+  <Fragment set:html={socialIcons[social.name]} />
+</LinkButton>

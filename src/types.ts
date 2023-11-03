@@ -8,19 +8,26 @@ export type Site = {
   postPerPage: number;
 };
 
-export type SocialObjects = {
-  name: SocialMedia;
-  href: string;
-  active: boolean;
-  linkTitle: string;
-}[];
-
-export type SocialIcons = {
-  [social in SocialMedia]: string;
-};
-
 export type SocialMedia =
   | "Github"
   | "LinkedIn"
   | "Mail"
   | "Twitter";
+
+export type SocialObject = {
+  name: SocialMedia;
+  href: string;
+  active: boolean;
+  linkTitle: string;
+};
+
+export type SocialObjects = SocialObject[];
+
+export type SocialIcons = {
+  [social in SocialMedia]: string;
+};
+
+export type Skill =
+  | "Arduino"
+  | "Raspberry Pi"
+  | "Python";

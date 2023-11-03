@@ -4,7 +4,7 @@ import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import Card from "@components/Card";
+import ProjectCard from "@components/ProjectCard";
 import LinkButton from "@components/LinkButton.astro";
 import slugify from "@utils/slugify";
 import type { CollectionEntry } from "astro:content";
@@ -12,22 +12,28 @@ import type { CollectionEntry } from "astro:content";
 export interface Props {
   pageNum: number;
   totalPages: number;
-  posts: CollectionEntry<"blog">[];
+  projects: CollectionEntry<"project">[];
 }
 
-const { pageNum, totalPages, posts } = Astro.props;
+const { pageNum, totalPages, projects } = Astro.props;
 
 const prev = pageNum > 1 ? "" : "disabled";
 const next = pageNum < totalPages ? "" : "disabled";
 ---
 
-<Layout title={`Blog | ${SITE.title}`}>
-  <Header activeNav="blog" />
-  <Main pageTitle="Blog" pageDesc="All the articles I've posted.">
+
+<Layout title={`Projects | ${SITE.title}`}>
+  <Header activeNav="projects" />
+  <Main pageTitle="Projects">
+    <p>
+      Here is a collection of some of my featured projects.
+      <br />
+      There are some others that I couldn't find a way to represent graphically, such as a recreation of an FTP server, a Unix Shell, or the printf function.
+    </p>
     <ul>
       {
-        posts.map(({ data }) => (
-          <Card href={`/blog/${slugify(data)}`} frontmatter={data} />
+        projects.map(({ data }) => (
+          <ProjectCard href={`/projects/${slugify(data)}`} frontmatter={data} />
         ))
       }
     </ul>
