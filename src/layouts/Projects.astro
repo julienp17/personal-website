@@ -1,5 +1,6 @@
 ---
 import { SITE } from "@config";
+import { Image } from 'astro:assets';
 import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
@@ -31,12 +32,12 @@ const next = pageNum < totalPages ? "" : "disabled";
       graphically, such as a recreation of an FTP server, a Unix Shell, or the
       printf function.
     </p>
-    <ul class="grid grid-cols-3">
+    <ul class="mt-4 grid grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(3,1fr)]">
       {
         projects.map(({ data }) => (
           <li>
             <a href={`/projects/${slugify(data)}`}>
-              <img src={data.thumbnail} class="w-full h-full object-cover" />
+              <Image src={data.thumbnail} alt={data.title} class="w-full h-full object-cover border-2 border-skin-accent" />
             </a>
           </li>
         ))

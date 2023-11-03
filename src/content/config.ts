@@ -29,7 +29,7 @@ const project = defineCollection({
     z.object({
       title: z.string(),
       description: z.string(),
-      thumbnail: z.string(),
+      thumbnail: image(),
       githubLink: z.string().optional(),
       youtubeId: z.string().optional(),
       startDate: z.date(),
