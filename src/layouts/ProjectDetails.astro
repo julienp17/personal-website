@@ -33,10 +33,14 @@ const { Content } = await project.render();
         <h1 transition:name={slugifyStr(title)} class="post-title">
           {title}
         </h1>
-        <LinkButton href={githubLink || "https://github.com/julienp17"}>
-          See on Github
-          <Fragment set:html={socialIcons["Github"]} />
-        </LinkButton>
+        {
+          githubLink && (
+            <LinkButton href={githubLink || "https://github.com/julienp17"}>
+              See on Github
+              <Fragment set:html={socialIcons["Github"]} />
+            </LinkButton>
+          )
+        }
       </div>
       <h2>
         {description}
