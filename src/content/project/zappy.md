@@ -1,6 +1,7 @@
 ---
 title: Zappy
 description: AI survival network game
+thumbnail: "./src/assets/images/zappy.png"
 postSlug: zappy
 youtubeId: L-nQY3QGCXM
 startDate: 2021-05-17T00:00:00Z

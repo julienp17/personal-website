@@ -21,19 +21,24 @@ const prev = pageNum > 1 ? "" : "disabled";
 const next = pageNum < totalPages ? "" : "disabled";
 ---
 
-
 <Layout title={`Projects | ${SITE.title}`}>
   <Header activeNav="projects" />
   <Main pageTitle="Projects">
     <p>
       Here is a collection of some of my featured projects.
       <br />
-      There are some others that I couldn't find a way to represent graphically, such as a recreation of an FTP server, a Unix Shell, or the printf function.
+      There are some others that I couldn't find a way to represent
+      graphically, such as a recreation of an FTP server, a Unix Shell, or the
+      printf function.
     </p>
-    <ul>
+    <ul class="grid grid-cols-3">
       {
         projects.map(({ data }) => (
-          <ProjectCard href={`/projects/${slugify(data)}`} frontmatter={data} />
+          <li>
+            <a href={`/projects/${slugify(data)}`}>
+              <img src={data.thumbnail} class="w-full h-full object-cover" />
+            </a>
+          </li>
         ))
       }
     </ul>
