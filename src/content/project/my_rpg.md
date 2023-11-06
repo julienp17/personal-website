@@ -2,7 +2,7 @@
 title: my_rpg
 description: An action RPG game
 thumbnail: "../../assets/images/my_rpg.png"
-postSlug: my_rpg
+slug: my_rpg
 githubLink: https://github.com/julienp17/my_rpg
 youtubeId: yeHJcYvUo2o
 startDate: 2020-03-16T00:00:00Z

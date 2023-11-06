@@ -2,7 +2,7 @@
 title: Rush2
 description: Language guessing
 thumbnail: "../../assets/images/rush2.png"
-postSlug: rush2
+slug: rush2
 githubLink: https://github.com/julienp17/CPool_rush2
 youtubeId: qVPZdLbu5aM
 startDate: 2019-08-12T00:00:00Z

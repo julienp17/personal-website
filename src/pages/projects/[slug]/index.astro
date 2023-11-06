@@ -1,10 +1,7 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import Projects from "@layouts/Projects.astro";
 import ProjectDetails from "@layouts/ProjectDetails.astro";
 import getPageNumbers from "@utils/getPageNumbers";
-import slugify from "@utils/slugify";
-import { SITE } from "@config";
 
 export interface Props {
   project: CollectionEntry<"project">;
@@ -14,7 +11,7 @@ export async function getStaticPaths() {
   const projects = await getCollection("project", ({ data }) => !data.draft);
 
   const projectResult = projects.map(project => ({
-    params: { slug: slugify(project.data) },
+    params: { slug: project.slug },
     props: { project },
   }));
 
@@ -25,13 +22,10 @@ export async function getStaticPaths() {
   return [...projectResult, ...pagePaths];
 }
 
-const { slug } = Astro.params;
 const { project } = Astro.props;
 
-const projects = await getCollection("project");
 ---
 
 {
-  <ProjectDetails project={project} />
-
+  project && <ProjectDetails project={project} />
 }

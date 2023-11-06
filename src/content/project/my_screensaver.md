@@ -2,7 +2,7 @@
 title: my_screensaver
 description: Screensaver effects and animations
 thumbnail: "../../assets/images/my_screensaver.jpg"
-postSlug: my_screensaver
+slug: my_screensaver
 githubLink: https://github.com/julienp17/my_screensaver
 youtubeId: ZtjTFDD-Wh4
 startDate: 2019-11-11T00:00:00Z

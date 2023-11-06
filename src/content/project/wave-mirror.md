@@ -2,7 +2,7 @@
 title: Wave Mirror
 description: Making art with reflections
 thumbnail: "../../assets/images/wave_mirror.jpg"
-postSlug: wave-mirror
+slug: wave-mirror
 githubLink: https://github.com/julienp17/WaveMirror
 youtubeId: ushJnQfjbF0
 startDate: 2018-08-01T00:00:00Z

@@ -2,7 +2,7 @@
 title: 101Pong
 description: The Pong game... with a bit of maths
 thumbnail: "../../assets/images/101pong.png"
-postSlug: 101pong
+slug: 101pong
 githubLink: https://github.com/julienp17/101pong
 youtubeId: ypXivtTI60Q
 startDate: 2019-11-04T00:00:00Z

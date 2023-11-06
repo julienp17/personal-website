@@ -2,7 +2,7 @@
 title: Navy
 description: The battleship game in the terminal
 thumbnail: "../../assets/images/navy.png"
-postSlug: navy
+slug: navy
 githubLink: https://github.com/julienp17/navy
 youtubeId: ZsJzzgAzRiY
 startDate: 2020-02-17T00:00:00Z

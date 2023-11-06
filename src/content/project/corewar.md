@@ -2,7 +2,7 @@
 title: Corewar
 description: Programs in assembler fighting for memory in virtual machine
 thumbnail: "../../assets/images/corewar.png"
-postSlug: corewar
+slug: corewar
 githubLink: https://github.com/julienp17/Corewar
 youtubeId: 9P04Eqeqxd4
 startDate: 2020-03-20T00:00:00Z

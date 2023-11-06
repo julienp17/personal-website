@@ -2,7 +2,7 @@
 title: Cardinal Chains
 description: A minimalist puzzle game
 thumbnail: "../../assets/images/cardinal_chains.png"
-postSlug: cardinal-chains
+slug: cardinal-chains
 githubLink: https://github.com/julienp17/CardinalChains
 youtubeId: 7Vrdld1ShY8
 startDate: 2021-06-11T00:00:00Z

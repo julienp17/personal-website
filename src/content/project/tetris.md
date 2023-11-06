@@ -2,7 +2,7 @@
 title: Tetris
 description: Tetris in the terminal
 thumbnail: "../../assets/images/tetris.png"
-postSlug: tetris
+slug: tetris
 githubLink: https://github.com/julienp17/tetris
 youtubeId: mauwd378xYo
 startDate: 2020-03-09T00:00:00Z

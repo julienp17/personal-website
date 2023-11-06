@@ -2,7 +2,7 @@
 title: my_radar
 description: Air traffic simulation
 thumbnail: "../../assets/images/my_radar.jpg"
-postSlug: my_radar
+slug: my_radar
 githubLink: https://github.com/julienp17/my_radar
 youtubeId: P4hhDQJPtls
 startDate: 2019-11-02T00:00:00Z

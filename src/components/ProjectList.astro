@@ -1,14 +1,14 @@
 ---
 import ProjectCard from "@components/ProjectCard.astro";
-import { Astro, CollectionEntry } from "@astrojs/runtime";
+import type { CollectionEntry } from "astro:content";
 
 export interface Props {
-  projects: CollectionEntry<"project">["data"];
+  projects: CollectionEntry<"project">[];
 }
 
 const { projects } = Astro.props;
 ---
 
 <ul class="grid grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(3,1fr)]">
-  {projects.map(({ data }) => <ProjectCard project={data} />)}
+  {projects.map((project) => <ProjectCard project={project} />)}
 </ul>

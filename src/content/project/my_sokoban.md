@@ -2,7 +2,7 @@
 title: my_sokoban
 description: Sokoban puzzle game
 thumbnail: "../../assets/images/my_sokoban.png"
-postSlug: my_sokoban
+slug: my_sokoban
 githubLink: https://github.com/julienp17/my_screensaver
 youtubeId: ipEQ7txe5P0
 startDate: 2019-11-25T00:00:00Z

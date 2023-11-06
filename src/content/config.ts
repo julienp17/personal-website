@@ -34,7 +34,6 @@ const project = defineCollection({
       youtubeId: z.string().optional(),
       startDate: z.date(),
       duration: z.string(),
-      postSlug: z.string().optional(),
       featured: z.boolean().optional(),
       draft: z.boolean().optional(),
       tags: z.array(z.string()).default(["others"]),

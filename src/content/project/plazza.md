@@ -2,7 +2,7 @@
 title: Plazza
 description: Pizzeria simulation
 thumbnail: "../../assets/images/plazza.png"
-postSlug: plazza
+slug: plazza
 githubLink: https://github.com/julienp17/Plazza
 youtubeId: sxGAtX1ibRA
 startDate: 2021-03-12T00:00:00Z

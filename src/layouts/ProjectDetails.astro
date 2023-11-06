@@ -1,19 +1,16 @@
 ---
-import { SITE, SOCIALS } from "@config";
+import { SITE } from "@config";
 import { Image } from 'astro:assets';
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import Tag from "@components/Tag.astro";
 import Datetime from "@components/Datetime";
 import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@utils/slugify";
 import GoBackButton from "@components/GoBackButton.astro";
-import Social from "@components/Social.astro";
 import LinkButton from "@components/LinkButton.astro";
 import socialIcons from "@assets/socialIcons";
 import getSkillIcon from "../utils/getSkillIcon.tsx"
-import Arduino from "../assets/images/arduino.png"
 
 export interface Props {
   project: CollectionEntry<"project">;

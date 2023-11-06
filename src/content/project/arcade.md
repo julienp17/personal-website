@@ -2,7 +2,7 @@
 title: Arcade
 description: Arcade simulation
 thumbnail: "../../assets/images/arcade.png"
-postSlug: arcade
+slug: arcade
 githubLink: https://github.com/julienp17/Arcade
 youtubeId: Vnk8MNlOE4Y
 startDate: 2021-03-08T00:00:00Z
