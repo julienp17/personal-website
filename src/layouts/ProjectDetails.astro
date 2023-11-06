@@ -73,10 +73,6 @@ const { Content } = await project.render();
     <article id="article" role="article" class="prose mx-auto mt-4 max-w-3xl">
       <Content />
     </article>
-
-    <ul class="tags-container">
-      {tags.map(tag => <Tag name={slugifyStr(tag)} />)}
-    </ul>
   </main>
   <Footer />
 </Layout>

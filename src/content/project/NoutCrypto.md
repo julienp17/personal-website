@@ -7,7 +7,7 @@ youtubeId: reZZZ09MDLQ
 startDate: 2021-05-30T00:00:00Z
 duration: 24 hours
 tags:
-  - nodejs
+  - node-js
 featured: false
 draft: false
 ---

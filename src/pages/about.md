@@ -5,10 +5,10 @@ title: "About me"
 
 <div class="flex-row sm:flex items-center">
   <div>
-    <img src="./src/assets/images/julien_pause.png" width="75%" alt="Julien Pause">
+    <img src="./src/assets/images/julien_pause.png" width="75%" class="border-2 border-white rounded-full" alt="Julien Pause">
   </div>
   <p class="text-center text-lg">
-    Hi! I'm Julien Pause.
+    👋 Hi! I'm Julien Pause
     <br />
     <br />
     I'm a React (& React Native) software engineer from Reunion Island 🇷🇪, based in Paris, France 🇫🇷.

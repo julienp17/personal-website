@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+import slugify from "@utils/slugify";
+import type { CollectionEntry } from "astro:content";
+
+export interface Props {
+  project: CollectionEntry<"project">["data"];
+}
+
+const { project } = Astro.props;
+const { title, thumbnail, description } = project;
+---
+
+<li class="aspect-square">
+  <a href={`/projects/${slugify(project)}`}>
+    <Image
+      src={thumbnail}
+      alt={title}
+      class="h-full w-full border-2 border-skin-accent object-cover"
+    />
+  </a>
+</li>

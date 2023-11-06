@@ -5,7 +5,8 @@ import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import ProjectCard from "@components/ProjectCard";
+import ProjectList from "@components/ProjectList.astro"
+import ProjectCard from "@components/ProjectCard.astro";
 import LinkButton from "@components/LinkButton.astro";
 import slugify from "@utils/slugify";
 import type { CollectionEntry } from "astro:content";
@@ -26,7 +27,7 @@ const next = pageNum < totalPages ? "" : "disabled";
 <Layout title={`Projects | ${SITE.title}`}>
   <Header activeNav="projects" />
   <Main pageTitle="Projects">
-    <p>
+    <p class="mb-6">
       Here is a collection of almost all the projects I have ever done.
       <br />
        They each feature a video, description, aswell as a link to the source
@@ -41,23 +42,7 @@ const next = pageNum < totalPages ? "" : "disabled";
         GitHub profile<Fragment set:html={socialIcons["Github"]} />
       </LinkButton>
     </p>
-    <ul
-      class="mt-4 grid grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(3,1fr)]"
-    >
-      {
-        projects.map(({ data }) => (
-          <li class="aspect-square">
-            <a href={`/projects/${slugify(data)}`}>
-              <Image
-                src={data.thumbnail}
-                alt={data.title}
-                class="h-full w-full border-2 border-skin-accent object-cover"
-              />
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+    <ProjectList projects={projects} />
   </Main>
 
   {
