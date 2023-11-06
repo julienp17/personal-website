@@ -1,6 +1,6 @@
 ---
 import { SITE } from "@config";
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import Header from "@components/Header.astro";
@@ -9,6 +9,7 @@ import ProjectCard from "@components/ProjectCard";
 import LinkButton from "@components/LinkButton.astro";
 import slugify from "@utils/slugify";
 import type { CollectionEntry } from "astro:content";
+import socialIcons from "@assets/socialIcons";
 
 export interface Props {
   pageNum: number;
@@ -26,18 +27,32 @@ const next = pageNum < totalPages ? "" : "disabled";
   <Header activeNav="projects" />
   <Main pageTitle="Projects">
     <p>
-      Here is a collection of some of my featured projects.
+      Here is a collection of almost all the projects I have ever done.
       <br />
-      There are some others that I couldn't find a way to represent
-      graphically, such as a recreation of an FTP server, a Unix Shell, or the
-      printf function.
+       They each feature a video, description, aswell as a link to the source
+      code.
+      <br />
+      <br />
+       Some projects I couldn't find a way to represent graphically, such as a
+      recreation of an FTP server, a Unix Shell, or the printf function.
+      <br />
+       You can find these projects on my
+      <LinkButton href={"https://github.com/julienp17?tab=repositories"} className="underline">
+        GitHub profile<Fragment set:html={socialIcons["Github"]} />
+      </LinkButton>
     </p>
-    <ul class="mt-4 grid grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(3,1fr)]">
+    <ul
+      class="mt-4 grid grid-cols-[repeat(2,1fr)] sm:grid-cols-[repeat(3,1fr)]"
+    >
       {
         projects.map(({ data }) => (
-          <li>
+          <li class="aspect-square">
             <a href={`/projects/${slugify(data)}`}>
-              <Image src={data.thumbnail} alt={data.title} class="w-full h-full object-cover border-2 border-skin-accent" />
+              <Image
+                src={data.thumbnail}
+                alt={data.title}
+                class="h-full w-full border-2 border-skin-accent object-cover"
+              />
             </a>
           </li>
         ))

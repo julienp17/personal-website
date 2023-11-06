@@ -32,9 +32,14 @@ const socialImageURL = new URL(
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffc40d" />
+
+    <link rel="canonical" href={canonicalURL} />
 
     <!-- General Meta Tags -->
     <title>{title}</title>
@@ -64,7 +69,8 @@ const socialImageURL = new URL(
       rel="stylesheet"
     />
 
-    <meta name="theme-color" content="" />
+    <meta name="theme-color" content="#ffc40d" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
 
     {
       // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
