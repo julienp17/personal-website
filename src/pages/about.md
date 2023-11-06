@@ -5,7 +5,7 @@ title: "About me"
 
 <div class="flex-row sm:flex items-center">
   <div>
-    <img src="./src/assets/images/julien_pause.png" width="75%" class="border-2 border-white rounded-full" alt="Julien Pause">
+    <img src="../assets/images/julien_pause.png" width="75%" class="border-2 border-white rounded-full" alt="Julien Pause">
   </div>
   <p class="text-center text-lg">
     👋 Hi! I'm Julien Pause
