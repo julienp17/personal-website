@@ -14,10 +14,12 @@ import Youtube from '../assets/images/youtube.png'
 import LinkedIn from '../assets/images/linkedin.png'
 import QuestionMark from '../assets/images/question-mark-48px.png'
 import Unreal from '../assets/images/unreal.png'
-import type { Skill } from '../types'
+import ReactLogo from '../assets/images/react_logo.png'
+import ReactNativeLogo from '../assets/images/react_native_logo.png'
+import Typescript from '../assets/images/typescript.png'
 
 type SkillIcon = {
-  [skill in Skill]: ImageMetadata
+  [key: string]: ImageMetadata
 }
 
 export default function getSkillIcon(tag: string): ImageMetadata {
@@ -35,6 +37,9 @@ export default function getSkillIcon(tag: string): ImageMetadata {
         'python': Python,
         'youtube': Youtube,
         'linkedIn': LinkedIn,
+        'react': ReactLogo,
+        'react-native': ReactNativeLogo,
+        'typescript': Typescript,
         'unreal-engine': Unreal,
         'raspberry-pi': RaspberryPi,
         'default': QuestionMark

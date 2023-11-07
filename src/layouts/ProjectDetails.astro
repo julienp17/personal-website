@@ -17,7 +17,7 @@ export interface Props {
 }
 
 const { project } = Astro.props;
-const { title, description, githubLink, youtubeId, startDate, duration, tags } = project.data;
+const { title, description, thumbnail, githubLink, youtubeId, startDate, duration, tags } = project.data;
 const { Content } = await project.render();
 ---
 
@@ -57,12 +57,18 @@ const { Content } = await project.render();
         ))}
       </ul>
     </div>
-    <iframe
-      src={`https://www.youtube.com/embed/${youtubeId}`}
-      class="w-full border-2 border-skin-accent rounded-md aspect-video"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+    {
+      youtubeId ? (
+        <iframe
+          src={`https://www.youtube.com/embed/${youtubeId}`}
+          class="w-full border-2 border-skin-accent rounded-md aspect-video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      ) : (
+        <Image src={thumbnail} title={title} alt={title} class="aspect-video border-2 border-skin-accent rounded-md" />
+      )
+    }
     <Datetime datetime={startDate} showTime={false} size="lg" className="mt-4" />
     <h2 class="opacity-80">
       Duration: {duration}

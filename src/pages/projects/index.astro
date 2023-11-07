@@ -5,8 +5,10 @@ import getSortedPosts from "@utils/getSortedPosts";
 import getPageNumbers from "@utils/getPageNumbers";
 
 import { getCollection } from "astro:content";
+import getSortedProjects from "@utils/getSortedProjects";
 
 const projects = await getCollection("project");
+const sortedProjects = getSortedProjects(projects);
 ---
 
-<Projects projects={projects} />
+<Projects projects={sortedProjects} />

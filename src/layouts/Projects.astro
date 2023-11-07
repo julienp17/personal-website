@@ -14,6 +14,7 @@ export interface Props {
 }
 
 const { projects } = Astro.props;
+
 ---
 
 <Layout title={`Projects | ${SITE.title}`}>
@@ -33,6 +34,9 @@ const { projects } = Astro.props;
       <LinkButton href={"https://github.com/julienp17?tab=repositories"} className="underline">
         GitHub profile<Fragment set:html={socialIcons["Github"]} />
       </LinkButton>
+    </p>
+    <p class="italic mb-6">
+      Sorted from most recent to oldest
     </p>
     <ProjectList projects={projects} />
   </Main>

@@ -3,20 +3,12 @@ layout: ../layouts/AboutLayout.astro
 title: "About me"
 ---
 
-<div class="flex-row sm:flex items-center">
-  <div>
-    <img src="../assets/images/julien_pause.png" width="75%" class="border-2 border-white rounded-full" alt="Julien Pause">
-  </div>
-  <p class="text-center text-lg">
-    👋 Hi! I'm Julien Pause
-    <br />
-    <br />
-    I'm a React (& React Native) software engineer from Reunion Island 🇷🇪, based in Paris, France 🇫🇷.
-  </p>
-</div>
 
-**Currently a 5th year student at Epitech Paris, I'm looking for an end-of-studies internship or CDI.**
-[Contact me now](mailto:julien.pause@epitech.eu)
+
+### 👋 Hey! Thanks for checking out my work.
+
+I created this website to showcase the projects which I'm proud of, and share my thoughts on different topics.\
+My interests include travel, philosophy, football...
 
 I'm an explorer who realized early how much life has to offer.
 I try to get the best of it by exploring different cultures and perspectives about life.\
@@ -24,8 +16,6 @@ You could call me an optimist absurdist 😊
 
 I speak 🇫🇷 French, 🇺🇸 English, and I'm learning 🇪🇸 Spanish.
 
-I created this website to showcase the projects which I'm proud of, and share my thoughts on different topics.\
-My interests include travel, philosophy, football...
 
 ## ⭐ Indie Hacking
 

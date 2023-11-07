@@ -9,7 +9,7 @@ duration: 2 weeks
 tags:
   - cpp
   - unreal-engine
-featured: true
+featured: false
 draft: false
 ---
 

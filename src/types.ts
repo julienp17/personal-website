@@ -26,8 +26,3 @@ export type SocialObjects = SocialObject[];
 export type SocialIcons = {
   [social in SocialMedia]: string;
 };
-
-export type Skill =
-  | "Arduino"
-  | "Raspberry Pi"
-  | "Python";
