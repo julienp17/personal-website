@@ -10,7 +10,7 @@ tags:
   - travel
 ---
 
-![Denali State Park north viewpoint during sunset](./src/assets/images/blog/alaska/denali_north_viewpoint_sunset.JPG "Denali State Park north viewpoint during sunset")
+![Denali State Park north viewpoint during sunset](../../assets/images/blog/alaska/denali_north_viewpoint_sunset.JPG "Denali State Park north viewpoint during sunset")
 
 ## Table of contents
 
@@ -25,7 +25,7 @@ Alaska is truly an underrated destination for nature lovers. It has beautiful sn
 
 ## ℹ️ Alaska information
 
-![Flag of Alaska](./src/assets/images/blog/alaska/alaska_flag.png "Alaska flag")
+![Flag of Alaska](../../assets/images/blog/alaska/alaska_flag.png "Alaska flag")
 <center>The flag of Alaska</center>
 
 Alaska used to be owned by 🇷🇺 Russia before they sold it to the 🇺🇸 US in 1867 for $7.2 million (equivalent to $151 million in 2022).\
@@ -37,7 +37,7 @@ So suck it Alaska
 
 ## 🗓️ Alaska in March
 
-![Alaska in March](./src/assets/images/blog/alaska/alaska_march.jpg "An infographic showing the best time to visit Alaska by months, with March highlighted by festivals, least bugs, auroras still visible, and with the most snow.")
+![Alaska in March](../../assets/images/blog/alaska/alaska_march.jpg "An infographic showing the best time to visit Alaska by months, with March highlighted by festivals, least bugs, auroras still visible, and with the most snow.")
 <center>The best time to visit Alaska</center>
 
 We decided to go in the first week of March to enjoy the last bit of winter. During this time the temperature is not as extreme, the daylight hours longer, the auroras still visible, and a festival is going on in Anchorage.\
@@ -49,7 +49,7 @@ We wanted to spend some time in Fairbanks by taking the Aurora Winter train, whi
 
 ## 🎒 What we packed
 
-![Alaskan fit](./src/assets/images/blog/alaska/alaskan_fit.jpg "Three people in an indoor environment in full winter clothing, including boots, ski pants, puffer jackets, and beanies.")
+![Alaskan fit](../../assets/images/blog/alaska/alaskan_fit.jpg "Three people in an indoor environment in full winter clothing, including boots, ski pants, puffer jackets, and beanies.")
 <center>Alaskan fit for non-Alaskan people</center>
 
 Alaska is, you guessed it, cold! 🥶
@@ -100,7 +100,7 @@ At the end of the trip, we just pay back each other according to the app.
 
 ## 🔭 Seeing the auroras
 
-![Aurora seen from Point Woronzof overlook](./src/assets/images/blog/alaska/aurora_point_woronzof_overlook.jpg "A green aurora seen at night from Point Woronzof overlook in Anchorage")
+![Aurora seen from Point Woronzof overlook](../../assets/images/blog/alaska/aurora_point_woronzof_overlook.jpg "A green aurora seen at night from Point Woronzof overlook in Anchorage")
 <center>Aurora seen from Point Woronzof overlook</center>
 
 You might find it complicated to understand if you will be able to see auroras when you arrive.

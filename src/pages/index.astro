@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
@@ -9,6 +10,7 @@ import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
 import getSortedPosts from "@utils/getSortedPosts";
 import slugify from "@utils/slugify";
+import JulienPause from "../assets/images/julien_pause.png";
 
 const featuredProjects = await getCollection("project", ({ data }) => data.featured);
 const posts = await getCollection("blog");
@@ -22,7 +24,7 @@ const sortedPosts = getSortedPosts(posts);
     <section id="hero">
       <div class="flex-row sm:flex items-center">
         <div>
-          <img src="./src/assets/images/julien_pause.png" width="75%" class="border-2 border-white rounded-full" alt="Julien Pause">
+          <Image src={JulienPause} alt="Julien Pause" class="border-2 border-white rounded-full"/>
         </div>
         <p class="text-center text-lg">
           👋 Hi! I'm Julien Pause
