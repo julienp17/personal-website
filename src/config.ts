@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Julien Pause",
   desc: "React & React Native software engineer based in Paris, France.",
   title: "Julien Pause",
-  ogImage: "julien_pause_og.png",
+  ogImage: "julien_pause_og.jpg",
   lightAndDarkMode: true,
   postPerPage: 10,
 };
