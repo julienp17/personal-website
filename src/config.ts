@@ -3,9 +3,9 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://www.julienpause.com/",
   author: "Julien Pause",
-  desc: "Personal website of Julien Pause, a React software engineer based in Paris, France.",
+  desc: "React & React Native software engineer based in Paris, France.",
   title: "Julien Pause",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "julien_pause_og.png",
   lightAndDarkMode: true,
   postPerPage: 10,
 };
